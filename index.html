@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Book Mania</title>
+    <style>
+        #spinner {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header starts here  -->
+    <header>
+        <!-- nav bar starts here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Book Mania</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar ends here -->
+
+    </header>
+    <!-- header Ends here  -->
+
+    <!-- main starts here  -->
+    <main>
+        <section>
+            <!-- heading starts here  -->
+            <div class="container p-5">
+                <h1 class="fw-light">"If you don’t like to read, you haven’t found the right book." <br>
+                    <span class="fw-bold">J.K. Rowling </span>
+                </h1>
+            </div>
+            <!-- heading starts here  -->
+
+            <!-- searching field starts here  -->
+
+            <div class="container ">
+                <div class="input-group mb-3 mx-auto w-50">
+                    <input id="input-bookinfo" type="text" class="form-control" placeholder="Search books here"
+                        aria-label="Books Name" aria-describedby="button-addon2">
+                    <button onclick="searchBooks()" class="btn btn-outline-secondary btn btn-success text-white "
+                        type="button">Search</button>
+                </div>
+            </div>
+
+            <!-- searching field ends here  -->
+
+            <h4 id="total-result" class='text-center'></h4>
+        </section>
+
+        <!-- cards field starts  -->
+        <section>
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+
+            </div>
+        </section>
+        <!-- cards field ends  -->
+
+        <!-- spinner starts here  -->
+        <section>
+            <div class="container ">
+                <div class="d-flex justify-content-center">
+                    <div id="spinner" class="spinner-border m-5 " style="width: 3rem; height: 3rem;" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- spinner ends here  -->
+
+    </main>
+    <!-- main ends here  -->
+
+    <!-- java script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
